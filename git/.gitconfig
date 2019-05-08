@@ -1,3 +1,5 @@
 [user]
 	email = fernandez.gfg@gmail.com
 	name = Gonzalo G. Fernandez
+[core]
+	editor = vim
