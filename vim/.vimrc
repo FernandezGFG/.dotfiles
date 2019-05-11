@@ -1,7 +1,7 @@
 "" echo "(>^.^<)"
 " Numbers on left
 set number
-set numberwidth=3
+" set numberwidth=3
 
 " Set leader
 let mapleader="¿"
@@ -28,25 +28,4 @@ vnoremap <leader>" di""<esc>hp
 
 " Abbreviations for my mail
 iabbrev @@ fernandez.gfg@gmail.com
-
-"-----------------------------------------
-" LaTex configuration
-iabbrev latex \LaTeX
-
-" Title
-nnoremap <leader>ti i\title{}<esc>i
-" Author
-nnoremap <leader>au i\author{}<esc>i
-
-" Equation
-nnoremap <leader>eq i\begin{equation}<enter>\end{equation}<esc>O
-
-" Section
-nnoremap <leader>s i\section{}<esc>i
-
-" Bold
-inoremap <c-b> \textbf{}<esc>i
-
-" Italic
-" inoremap <c-i> \textit{}<esc>i
 
