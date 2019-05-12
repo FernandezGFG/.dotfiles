@@ -14,4 +14,4 @@ cs() { cd "$@" && ls; }
 # Alias to launch matlab
 alias matlab='. matlab'
 
-alias ia2='. ~/python/ia2-env/bin/activate'
+alias ia2='. ~/python/IA2_2019/ia2-env/bin/activate'
