@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Create folder and enter it
+function mk() {
+    mkdir -p "$@" && cd "$@"
+}
+
+# Function to change directory and list files and folder
+function cs() { 
+    cd "$@" && ls; 
+}
+

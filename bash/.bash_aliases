@@ -1,7 +1,10 @@
+#!/bin/bash
+
 # clear the screen
 alias cl=clear
 
 # ls aliases
+alias ls='ls --color=auto'
 alias ll='ls -l'
 alias la='ls -a'
 
@@ -13,3 +16,4 @@ alias ia2='. ~/python/IA2_2019/ia2-env/bin/activate'
 # Alias to launch matlab
 alias matlab='. matlab'
 
+# Funny songs aliases
