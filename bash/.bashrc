@@ -11,7 +11,7 @@ PS1='[\u@\h \W]\$ '
 # Function to change directory and list files and folder
 cs() { cd "$@" && ls; }
 
-# Alias to launch matlab
-alias matlab='. matlab'
+if [ -f ~/.bash_aliases ]; then
+    . ~/.bash_aliases
+fi
 
-alias ia2='. ~/python/IA2_2019/ia2-env/bin/activate'
