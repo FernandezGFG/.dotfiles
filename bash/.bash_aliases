@@ -9,6 +9,9 @@ alias cl=clear
 alias ll='ls -l'
 alias la='ls -a'
 
+# cd aliases
+alias ..='cd ..'
+
 # Python aliases
 alias py=python3
 alias pip=pip3
