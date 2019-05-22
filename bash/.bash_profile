@@ -7,3 +7,4 @@
 # Add .scripts folder to PATH
 export PATH=$PATH:~/.scripts
 
+startx
