@@ -9,7 +9,7 @@
 . ~/.git-prompt.sh
 
 export GIT_PS1_SHOWDIRTYSTATE=1
-export PS1='$(__git_ps1 "(%s) ")[\u@\h \W]\$ '
+export PS1='$(__git_ps1 "(%s) ")\e[0;32m[\u@\h \W]\$\e[m '
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
