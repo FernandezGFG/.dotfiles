@@ -61,12 +61,6 @@ bindsym $mod+Shift+w exec firefox
 # start file manager [EDITED]
 bindsym $mod+Shift+f exec st -e ranger
 
-# launch telegram-desktop
-bindsym $mod+Shift+t exec st -e telegram-desktop
-
-# start emacs
-bindsym $Ctrl+$Alt+e exec emacs
-
 # kill focused window
 bindsym $mod+Shift+q kill
 
@@ -230,4 +224,4 @@ assign [class="MATLAB R2018a"] $ws8
 assign [class="Slack"] $ws9
 
 # Launch application in specifics workspaces
-exec --no-startup-id i3-msg '$ws1; exec st; $ws2; exec emacs; $ws1'
+exec --no-startup-id i3-msg '$ws1; exec st'
