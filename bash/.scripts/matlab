@@ -1,0 +1,4 @@
+#!/bin/bash
+
+/usr/local/MATLAB/R2018a/bin/matlab &
+disown /usr/local/MATLAB/R2018a/bin/matlab

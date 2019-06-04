@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# ~/downward/fast-downward.py $1 $2 --search "astar(lmcut())"
+
+~/downward/fast-downward.py --alias seq-sat-lama-2011 $1 $2
