@@ -101,4 +101,8 @@ alias ohmyzsh="vim ~/.oh-my-zsh"
 
 source ~/.bash_aliases
 
+# AVR Development [REVISAR SI ES NECESARIO]
+# PATH=$PATH:/usr/local/bin
+
 export PATH=$PATH:~/.scripts
+
