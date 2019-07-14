@@ -3,6 +3,9 @@
 set number
 set numberwidth=3
 
+" Tab width
+set tabstop=4
+
 " Set leader
 let mapleader="¿"
 
