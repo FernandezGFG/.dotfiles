@@ -103,6 +103,7 @@ source ~/.bash_aliases
 
 # AVR Development [REVISAR SI ES NECESARIO]
 # PATH=$PATH:/usr/local/bin
+PATH=$PATH:~/.dotfiles/avr/
 
 export PATH=$PATH:~/.scripts
 

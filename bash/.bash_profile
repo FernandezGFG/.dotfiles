@@ -6,5 +6,4 @@
 
 # Add .scripts folder to PATH
 export PATH=$PATH:~/.scripts
-
-startx
+export PATH=$PATH:~/.dotfiles/avr
