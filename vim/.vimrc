@@ -2,6 +2,7 @@
 " Numbers on left
 set number
 " set numberwidth=3
+set tabstop=4
 
 " Set leader
 let mapleader="¿"
