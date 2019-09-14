@@ -1,0 +1,57 @@
+#!/usr/bin/env python
+
+import sys
+import os
+import subprocess
+import logging
+
+args = sys.argv[:]
+
+# Check for explicit log path
+flagLog = 1
+if ('--no-log' in args):
+	flagLog = 0
+	args.remove('--no-log')
+elif ('--log-path' in args):
+	index = args.index('--log-path')
+	logDir = args[index+1]
+	del args[index+1]
+	del args[index]
+else:
+	logDir = '~/.local/log/'
+
+if (flagLog):
+	logPath = os.fsdecode(logDir+'cldir_history.log')
+	LOG_FORMAT = "%(levelname)s %(asctime)s - %(message)s"
+	logging.basicConfig(filename=logPath, level=logging.DEBUG, format=LOG_FORMAT)
+	logger = logging.getLogger()
+
+# Check for explicit target
+if ('--target' in args):
+	index = args.index('--target')
+	dirCl = args[index+1]
+	del args[index+1]
+	del args[index]
+	i = 3
+else:
+	# Working directory is the default directory to clean
+	pwdOut = subprocess.run('pwd', capture_output=True, text=True)
+	dirCl = pwdOut.stdout.replace('\n', '/')
+	i = 1
+
+types = []
+while (i < len(args)):
+	argExt = args[i][2:]
+	types.append((argExt, args[i+1]))
+	i += 2
+
+directory = os.fsencode(dirCl)
+for file in os.listdir(directory):
+	filename = os.fsdecode(file)
+	for ext, dir in types:
+		if (filename.endswith("." + ext)):
+			subprocess.run(['mv', dirCl+filename, dir])
+			if (flagLog):
+				msg = dirCl+filename + " -> " + dir
+				print(msg)
+				logger.info(msg)
