@@ -18,7 +18,7 @@ elif ('--log-path' in args):
 	del args[index+1]
 	del args[index]
 else:
-	logDir = '~/.local/log/'
+	logDir = '/home/ggf/.local/log/'
 
 if (flagLog):
 	logPath = os.fsdecode(logDir+'cldir_history.log')
@@ -32,17 +32,17 @@ if ('--target' in args):
 	dirCl = args[index+1]
 	del args[index+1]
 	del args[index]
-	i = 3
 else:
 	# Working directory is the default directory to clean
 	pwdOut = subprocess.run('pwd', capture_output=True, text=True)
 	dirCl = pwdOut.stdout.replace('\n', '/')
-	i = 1
 
+i = 1
 types = []
 while (i < len(args)):
 	argExt = args[i][2:]
 	types.append((argExt, args[i+1]))
+	print(argExt, args[i+1])
 	i += 2
 
 directory = os.fsencode(dirCl)
