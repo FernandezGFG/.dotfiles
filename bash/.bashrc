@@ -93,7 +93,7 @@ unset use_color safe_term match_lhs sh
 # Add to PATH MATLAB bin/ folder
 export PATH=$PATH:/usr/local/MATLAB/R2018a/bin/
 
-alias matlab='matlab -desktop &'
+# alias matlab='matlab -desktop &'
 
 if [ -f ~/.bash_aliases ]; then
     . ~/.bash_aliases
