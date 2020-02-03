@@ -93,6 +93,9 @@ unset use_color safe_term match_lhs sh
 # Add to PATH MATLAB bin/ folder
 export PATH=$PATH:/usr/local/MATLAB/R2018a/bin/
 
+#Add ruby bin/ folder to PATH
+export PATH=$PATH:/home/ggf/.gem/ruby/2.7.0/bin
+
 # alias matlab='matlab -desktop &'
 
 if [ -f ~/.bash_aliases ]; then
@@ -119,3 +122,5 @@ fi
 unset __conda_setup
 # <<< conda initialize <<<
 
+# alias for unlocking pacman
+alias unlock-pacman='rm /var/lib/pacman/db.lck'
