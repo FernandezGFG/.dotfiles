@@ -96,6 +96,9 @@ export PATH=$PATH:/usr/local/MATLAB/R2018a/bin/
 #Add ruby bin/ folder to PATH
 export PATH=$PATH:/home/ggf/.gem/ruby/2.7.0/bin
 
+#Add scripts folder to PATH
+export PATH=$PATH:~/.scripts
+
 # alias matlab='matlab -desktop &'
 
 if [ -f ~/.bash_aliases ]; then

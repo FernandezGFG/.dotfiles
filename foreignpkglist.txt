@@ -1,3 +1,6 @@
+etcher-bin
+fritzing
+gtk-recordmydesktop
+jlink-software-and-documentation
 libselinux
 libsepol
-slack-desktop
