@@ -1,0 +1,9 @@
+#!/usr/bin/env xdg-open
+[Desktop Entry]
+Type=Application
+Name=Transmission
+MimeType=application/x-bittorrent
+Comment=A light-weight and cross-platform BitTorrent client
+Exec=.local/bin/transadd %U
+Icon=/home/ggf/.local/share/icons/transmission.ico
+Terminal=false
